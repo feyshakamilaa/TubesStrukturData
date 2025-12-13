@@ -1,0 +1,182 @@
+/* =========================
+   GLOBAL BASE
+   ========================= */
+QWidget {
+    background-color: #1C1C1E;
+    color: #E3E3E3;
+    font-family: "Segoe UI", Arial;
+}
+
+/* Scroll area */
+QScrollArea {
+    border: none;
+}
+
+/* =========================
+   TEXT INPUTS
+   ========================= */
+QLineEdit {
+    background-color: #2B2B2E;
+    border-radius: 22px;
+    padding: 10px 16px;
+    border: 1px solid #3A5256;
+    font-size: 15px;
+    color: #E3E3E3;
+}
+
+QLineEdit:focus {
+    border: 1px solid #F92D44;
+    background-color: #323234;
+}
+
+/* =========================
+   SIDEBAR
+   ========================= */
+QFrame#Sidebar {
+    background-color: #232326;
+    border-right: 2px solid #50000C;
+}
+
+QLabel#SidebarTitle {
+    color: #F92D44;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+QPushButton[role="sidebar"] {
+    background-color: transparent;
+    color: #ABAAA5;
+    padding: 12px 14px;
+    border-radius: 14px;
+    text-align: left;
+    font-size: 15px;
+}
+
+QPushButton[role="sidebar"]:hover {
+    background-color: #3A3A3D;
+    color: white;
+}
+
+/* Logout di sidebar */
+QPushButton#LogoutButton {
+    border: 1px solid #BB0218;
+    color: #BB0218;
+    border-radius: 20px;
+    padding: 10px 16px;
+}
+QPushButton#LogoutButton:hover {
+    background-color: #BB0218;
+    color: white;
+}
+
+/* =========================
+   HEADER / TITLE
+   ========================= */
+QFrame#HeaderBar {
+    background-color: transparent;
+}
+
+QLabel#PageTitle {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* =========================
+   PLAYER BAR
+   ========================= */
+QFrame#PlayerBar {
+    background-color: #232326;
+    border-top: 2px solid #50000C;
+}
+
+QPushButton[role="player-main"] {
+    background-color: #3A5256;
+    border-radius: 26px;
+    width: 48px;
+    height: 48px;
+}
+
+QPushButton[role="player-main"]:hover {
+    background-color: #4C6D70;
+}
+
+QPushButton[role="player-secondary"] {
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+QPushButton[role="player-secondary"]:hover {
+    background-color: #3A3A3D;
+}
+
+/* =========================
+   GENERIC BUTTONS
+   ========================= */
+QPushButton {
+    border-radius: 18px;
+    font-size: 14px;
+    padding: 8px 14px;
+    border: none;
+}
+
+/* PRIMARY (Play) */
+QPushButton[buttonRole="primary"] {
+    background-color: #F92D44;
+    color: white;
+}
+QPushButton[buttonRole="primary"]:hover {
+    background-color: #BB0218;
+}
+
+/* SECONDARY */
+QPushButton[buttonRole="secondary"] {
+    background-color: #3A5256;
+    color: white;
+}
+QPushButton[buttonRole="secondary"]:hover {
+    background-color: #4C6D70;
+}
+
+/* DANGER */
+QPushButton[buttonRole="danger"] {
+    background-color: #BB0218;
+    color: white;
+}
+QPushButton[buttonRole="danger"]:hover {
+    background-color: #F92D44;
+}
+
+/* Outline danger (misalnya close kecil / logout tertentu) */
+QPushButton[buttonRole="outline-danger"] {
+    background-color: transparent;
+    border: 1px solid #BB0218;
+    color: #BB0218;
+}
+QPushButton[buttonRole="outline-danger"]:hover {
+    background-color: #BB0218;
+    color: white;
+}
+
+/* =========================
+   LOGIN CARD
+   ========================= */
+QFrame#LoginCard {
+    background-color: #19191A;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+QLabel#LoginTitle {
+    color: #F92D44;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#FavButton {
+    background: transparent;
+    border: none;
+}
+
+#FavButton:hover {
+    background: transparent;
+}
