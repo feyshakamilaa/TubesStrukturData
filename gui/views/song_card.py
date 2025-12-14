@@ -117,9 +117,7 @@ class SongCard(QFrame):
 
         self.setMouseTracking(True)
 
-    # =====================================================
     # FAVORITE HANDLER
-    # =====================================================
     def _is_favorite(self):
         return self.song.id in self.parent_window.favorites
 
@@ -139,18 +137,13 @@ class SongCard(QFrame):
         self.parent_window.toggle_favorite(self.song)
         self._update_fav_ui()
 
-    # =====================================================
     # REMOVE FROM PLAYLIST (SAFE)
-    # =====================================================
     def _remove_from_playlist(self):
         if hasattr(self.parent_window, "remove_song_from_current_playlist"):
             self.parent_window.remove_song_from_current_playlist(self.song)
 
 
-# ============================================================
 # GRID VIEW (3 columns)
-# ============================================================
-
 class SongGridView(QWidget):
     def __init__(self, parent_window, songs: list[Song], in_playlist=False):
         super().__init__()
